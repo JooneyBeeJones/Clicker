@@ -1,11 +1,20 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+
   width: 100%;
+
+  font-style: Roboto;
+  color: #FECF0F;
+  background-color: #3A2B96;
+}
+
+main {
+  font-size: 1.25rem;
 }
 
 .section {
@@ -29,32 +38,55 @@ body {
   height: 75vh;
 }
 
+.total h1{
+  text-shadow: 0 3px #E67E21;
+  transition: 100ms;
+}
+
 .btn {
   outline: none;
-  border: 2px solid black;
+  border: 10px solid #F0C30E;
 
   padding: 1rem .75rem;
   border-radius: 8px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 
-  background-color: white;
+  background-color: #F39C12;
   color: black;
 
-  box-shadow: 0 4px black; 
+  box-shadow: 0 4px #E57A22; 
   cursor: pointer;
+  color: #F1C30F;
+  text-shadow: 0 4px #E57A22;
 
   transition: 100ms;
 }
 
+.btn-coin {
+  width: 200px;
+  height: 200px;
+
+  border: none;
+  box-shadow: none;
+  border-radius: 100%;
+
+  background-image: url('./img/bitcoin.png');
+  background-size: cover;
+
+}
 
 .btn:active {
   position: relative;
 
   top: 3px;
-  box-shadow: none;
 }
 
 .btn-click {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   height: 50vh;
 }
 
