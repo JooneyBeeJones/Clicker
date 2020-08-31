@@ -21,7 +21,6 @@ function Machine(props) {
 	    return() => clearInterval(id);
 	}, [machine]);
 
-
 	return(
 		<div className='sub-button'>
 			<h2>

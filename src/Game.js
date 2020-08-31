@@ -30,6 +30,8 @@ function Game() {
       case 1000000:
         setFont(f => f + 1);
         break;
+      default: 
+        break;
     }
   }
 
@@ -50,7 +52,7 @@ function Game() {
     <main>
       <div className='section'>
         <div className='sub-section total'>
-          <h1 style={{ fontSize: `${font}rem`}}>
+          <h1 onChange={increaseFont(total)} style={{ fontSize: `${font}rem`}}>
             ₿{total}
           </h1>
         </div>
@@ -67,8 +69,8 @@ function Game() {
             </h2>
             <button className='btn' onClick={addHelper}>Buy Helper <br/> ₿{helperPrice}</button>
           </div>
-          <Machine total={total} setTotal={setTotal}/>
-          <Factory total={total} setTotal={setTotal}/>
+          <Machine total={total} setTotal={setTotal} increaseFont={increaseFont}/>
+          <Factory total={total} setTotal={setTotal} increaseFont={increaseFont}/>
         </div>
       </div>
     </main>

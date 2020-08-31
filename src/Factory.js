@@ -21,6 +21,8 @@ function Factory(props) {
 	    return() => clearInterval(id);
 	}, [factory]);
 
+
+
 	return(
 		<div className='sub-button'>  
 			<h2>
